@@ -167,6 +167,23 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Text(
               'You have pushed the button this many times:',
+              style: TextStyle(
+                fontFamily:
+                    'Bungee', // FAMIGLIA DEL CARATTERE PRESO DA GOOGLE FONT E CARICATO IN pubspec.yaml
+                color: Colors.blue, // COLORE DEL TESTO
+                fontWeight: FontWeight.w800, // SPESSORE DEL TESTO
+                fontSize: 15, // DIMENSIONE DEL TESTO
+                letterSpacing: 5, // SPAZIATURA TRA LE LETTERE
+                wordSpacing: 10, // SPAZIATURA TRA LE PAROLE
+                shadows: [
+                  Shadow(
+                    // OMBRA DEL TESTO ORENDE UNA LISTA SHADOW
+                    color: Colors.grey,
+                    offset: Offset(2, 2),
+                    blurRadius: 3,
+                  ),
+                ],
+              ),
             ), // INSERISCO UN TITOLO NELLA PARTE CENTRALE
             Text(
               '$_counter', // IL TESTO FA RIFERIMENTO AL COUNTER
