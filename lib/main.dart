@@ -191,6 +191,96 @@ class _MyHomePageState extends State<MyHomePage> {
                 context,
               ).textTheme.headlineMedium, // STILE DEL TESTO
             ),
+            TextButton.icon(
+              // BOTTONE DI TIPO TESTO CON ICONA
+              onPressed:
+                  () {}, // AZIONE DA ESEGUIRE QUANDO SI PREME IL BOTTONE (VUOTO PER ORA) SE E' NULL IL BOTTONE E' DISABILITATO
+              icon: const Icon(Icons.add), // ICONA DEL BOTTONE
+              label: const Text('TextButton'), // TESTO DEL BOTTONE
+              style: TextButton.styleFrom(
+                // STILE DEL BOTTONE
+                // STILE DEL BOTTONE
+                foregroundColor: const Color.fromARGB(
+                  255,
+                  9,
+                  1,
+                  73,
+                ), // COLORE DEL TESTO E DELL'ICONA
+                textStyle: const TextStyle(
+                  fontSize: 20,
+                ), // DIMENSIONE DEL TESTO
+              ),
+            ), // BOTTONE DI TIPO TESTO
+            ElevatedButton.icon(
+              onPressed:
+                  () {}, // AZIONE DA ESEGUIRE QUANDO SI PREME IL BOTTONE (VUOTO PER ORA) SE E' NULL IL BOTTONE E' DISABILITATO
+              icon: const Icon(Icons.add), // ICONA DEL BOTTONE
+              label: const Text('ElevatedButton'),
+              style: ElevatedButton.styleFrom(
+                // STILE DEL BOTTONE
+                foregroundColor: const Color.fromARGB(
+                  255,
+                  248,
+                  249,
+                  250,
+                ), // COLORE DEL TESTO E DELL'ICONA
+                backgroundColor: const Color.fromARGB(
+                  255,
+                  9,
+                  1,
+                  73,
+                ), // COLORE DI SFONDO DEL BOTTONE
+                textStyle: const TextStyle(
+                  fontSize: 20,
+                ), // DIMENSIONE DEL TESTO
+                elevation: 10, // OMBRA SOTTO IL BOTTONE
+                shadowColor: const Color.fromARGB(
+                  255,
+                  5,
+                  8,
+                  209,
+                ), // COLORE DELL'OMBRA
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 40,
+                  vertical: 20,
+                ), // PADDING INTERNO AL BOTTONE
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ), // FORMA DEL BOTTONE (ROTONDITA' DEGLI ANGOLI)
+              ),
+            ), // BOTTONE ELEVATO
+
+            const Icon(Icons.width_full), // SPACER TRA I BOTTONI
+
+            OutlinedButton.icon(
+              onPressed:
+                  () {}, // AZIONE DA ESEGUIRE QUANDO SI PREME IL BOTTONE (VUOTO PER ORA) SE E' NULL IL BOTTONE E' DISABILITATO
+              icon: const Icon(Icons.add), // ICONA DEL BOTTONE
+              label: const Text('OutlinedButton'),
+              style: OutlinedButton.styleFrom(
+                // STILE DEL BOTTONE
+                foregroundColor: const Color.fromARGB(
+                  255,
+                  9,
+                  1,
+                  73,
+                ), // COLORE DEL TESTO E DELL'ICONA
+                side: const BorderSide(
+                  color: Color.fromARGB(255, 9, 1, 73),
+                  width: 2,
+                ), // COLORE E SPESSORE DEL BORDO
+                textStyle: const TextStyle(
+                  fontSize: 20,
+                ), // DIMENSIONE DEL TESTO
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 10,
+                ), // PADDING INTERNO AL BOTTONE
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ), // FORMA DEL BOTTONE (ROTONDITA' DEGLI ANGOLI)
+              ),
+            ), // BOTTONE CON BORDO
           ],
         ),
       ),
