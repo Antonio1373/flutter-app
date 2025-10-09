@@ -165,6 +165,14 @@ class _MyHomePageState extends State<MyHomePage> {
           // CI POSIZIONIAMO NELLA PARTE CENTRALE DEL NOSTRO BODY
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Container(
+              width: 300, // DIMENSIONE DELL'IMMAGINE
+              height: 300, // DIMENSIONE DELL'IMMAGINE
+              child: Image.asset(
+                'images/sfondo.jpg',
+                fit: BoxFit.cover, // ADATTA L'IMMAGINE AL CONTAINER
+              ), // PERCORSO DELL'IMMAGINE
+            ), // INSERISCO UN'IMMAGINE NELLA PARTE CENTRALE
             const Text(
               'You have pushed the button this many times:',
               style: TextStyle(
